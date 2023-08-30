@@ -13,9 +13,9 @@ Welcome to **VectorFlow**, a cutting-edge Flask and React application that trans
 
 ## Get Started
 
-1. Clone the repository.
+<!-- 1. Clone the repository.
 2. Install dependencies with `npm install` and `pip install`.
-3. Run the app with `npm start` and `python app.py`.
+3. Run the app with `npm start` and `python app.py`.-->
 
 ## Usage
 

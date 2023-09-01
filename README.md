@@ -17,6 +17,30 @@ Welcome to **VectorFlow**, a cutting-edge Flask and React application that trans
 2. Install dependencies with `npm install` and `pip install`.
 3. Run the app with `npm start` and `python app.py`.-->
 
+
+
+
+
+
+
+### Set up your API keys and endpoints in the `secret` folder
+
+1.  Create a new file `secret/openai_api_key` and paste your [OpenAI API key](https://platform.openai.com/docs/api-reference/authentication) into it:
+
+`echo "your_openai_api_key_here" > secret/openai_api_key`
+
+2.  Create a new file `secret/pinecone_api_key` and paste your [Pinecone API key](https://docs.pinecone.io/docs/quickstart#2-get-and-verify-your-pinecone-api-key) into it:
+
+`echo "your_pinecone_api_key_here" > secret/pinecone_api_key`
+
+When setting up your pinecone index, use a vector size of `1536` and keep all the default settings the same.
+
+3.  Create a new file `secret/pinecone_api_endpoint` and paste your [Pinecone API endpoint](https://app.pinecone.io/organizations/) into it:
+
+`echo "https://example-50709b5.svc.asia-southeast1-gcp.pinecone.io" > secret/pinecone_api_endpoint`
+
+
+
 ## Usage
 
 1. Upload a PDF.

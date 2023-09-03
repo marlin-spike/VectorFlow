@@ -23,6 +23,10 @@ Welcome to **VectorFlow**, a cutting-edge Flask and React application that trans
 
 
 
+
+
+
+
 ### Set up your API keys and endpoints in the `secret` folder
 
 1.  Create a new file `secret/openai_api_key` and paste your [OpenAI API key](https://platform.openai.com/docs/api-reference/authentication) into it:

@@ -23,7 +23,7 @@ To run VectorFlow locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/vectorflow.git
+   git clone https://github.com/marlin-spike/VectorFlow
    ```
 
 2. Install the required dependencies:

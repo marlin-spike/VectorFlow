@@ -13,12 +13,14 @@ import io
 import os
 from src.backend import *
 from src.frontend import *
+from secret.keys import OPENAI_API_KEY
+from secret.keys import HUGGINGFACEHUB_API_TOKEN
 
 # Set the OpenAI API key
-os.environ["OPENAI_API_KEY"] = "_Key_"
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 
-# OPENAI_API_KEY="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"
+
 
 
 def main():

@@ -10,7 +10,7 @@ from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
 # from langchain.llms import HuggingFaceHub
 # import io
-import os
+# import os
 from src.backend import *
 
 def get_conversation_chain(vectorstore):

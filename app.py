@@ -20,9 +20,6 @@ from secret.keys import HUGGINGFACEHUB_API_TOKEN
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 
-
-
-
 def main():
     load_dotenv()
     st.set_page_config(page_title="VectorFlow",

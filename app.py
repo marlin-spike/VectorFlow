@@ -15,7 +15,7 @@ from src.backend import *
 from src.frontend import *
 
 # Set the OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "_Key_"
 
 
 # OPENAI_API_KEY="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"

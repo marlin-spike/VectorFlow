@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from dotenv import load_dotenv
 # from PyPDF2 import PdfReader
@@ -12,6 +13,9 @@ from htmlTemplates import css, bot_template, user_template
 # import io
 # import os
 from src.backend import *
+import logging
+
+logging.basicConfig(filename='data.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filemode='a')
 
 def get_conversation_chain(vectorstore):
     llm = ChatOpenAI()
@@ -30,7 +34,9 @@ def get_conversation_chain(vectorstore):
 def handle_userinput(user_question):
     response = st.session_state.conversation({'question': user_question})
     st.session_state.chat_history = response['chat_history']
-
+    logging.info(response)
+    print("Current working directory:", os.getcwd())
+    
     for i, message in enumerate(st.session_state.chat_history):
         if i % 2 == 0:
             st.write(user_template.replace(
